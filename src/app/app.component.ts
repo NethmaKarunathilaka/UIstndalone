@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { CompanyPortalComponent } from "./company-portal/company-portal.component";
 
 
@@ -8,7 +8,7 @@ import { CompanyPortalComponent } from "./company-portal/company-portal.componen
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, CompanyPortalComponent,]
+    imports: [RouterOutlet, CompanyPortalComponent,RouterModule]
    
 })
 export class AppComponent {
